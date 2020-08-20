@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'activities#index'
+  root to: 'tags#index'
   resources :activities
   resources :posts
   resources :tags

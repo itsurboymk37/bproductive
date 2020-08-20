@@ -19,15 +19,32 @@
     color: blue;
  }
 
+ .tag {
+     padding-bottom: 120px;
+ }
+
+ .tag_list {
+     padding-bottom: 20px;
+ }
+
  .new_activity, .new_post {
-     margin-bottom: 120px;
+    margin-bottom: 120px;
+ }
+
+ .page_nav, .new_activity, .new_post {
+    display: inline-block;
+    margin-right: 20px;
+ }
+
+ .nav_bar {
+    text-align: center;
  }
 
  .activity {
-     padding: 100px;
-     margin: 20px;
-     display: inline;
-     justify-content: center;
-     text-align: center; 
-     background-color: yellow;
+    padding: 100px;
+    margin: 20px;
+    display: inline;
+    justify-content: center;
+    text-align: center; 
+    background-color: rgb(0, 255, 255);
  }

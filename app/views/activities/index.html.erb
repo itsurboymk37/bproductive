@@ -1,6 +1,9 @@
 <h1>All Activities</h1>
-<p class='page_nav'><%= link_to "To the Posts Page!", posts_path %></p>
-<p class='new_activity'><%= link_to "Create a New Activity", new_activity_path %></p>
+<div class='nav_bar'>
+  <p class='page_nav'><%= link_to "See All Tags", tags_path %></p>
+  <p class='page_nav'><%= link_to "To the Posts Page!", posts_path %></p>
+  <p class='new_activity'><%= link_to "Create a New Activity", new_activity_path %></p>
+</div>
 <ul>
   <% @activities.each do |activity| %>
     <li class='activity'>

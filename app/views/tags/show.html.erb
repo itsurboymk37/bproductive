@@ -1,3 +1,21 @@
+<h1>Browse All Tags</h1>
+
+<ul>
+  <li class='tag'>
+    <%= link_to @tag.name, tags_path %>
+  </li>
+  
+ 
+  <% @tag.activities.each do |activity| %>
+    <li class='activity'>
+      <%= link_to activity.title, activity_path(activity) %>
+    </li>
+  <% end %>
+</ul>
+
+
+
+<!-- Old Tag Display Method
 <h1>Articles Tagged with <%= @tag.name %></h1>
 
 <ul>
@@ -5,3 +23,4 @@
     <li><%= link_to activity.title, activity_path(activity) %></li>
   <% end %>
 </ul>
+-->
