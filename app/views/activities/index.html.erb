@@ -1,5 +1,5 @@
 <h1>All Activities</h1>
-
+<p class='new_activity'><%= link_to "Create a New Activity", new_activity_path %></p>
 <ul id="articles">
   <% @activities.each do |activity| %>
     <li>
@@ -7,4 +7,3 @@
     </li>
   <% end %>
 </ul>
-<%= link_to "Create a New Activity", new_activity_path %> 
