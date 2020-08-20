@@ -14,12 +14,12 @@
  *= require_self
  */
 
- h1, .new_activity, .form {
+ h1, .new_activity, .form, .new_post, .page_nav{
     text-align: center;
     color: blue;
  }
 
- .new_activity {
+ .new_activity, .new_post {
      margin-bottom: 120px;
  }
 
