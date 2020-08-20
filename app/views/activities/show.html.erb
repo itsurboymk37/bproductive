@@ -1,4 +1,10 @@
 <h1><%= @activity.title %></h1>
+<p>
+  Tags:
+  <% @activity.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
 <p><%= @activity.body %></p>
 <%= link_to "<< Back to Activity List", activities_path %>
 <%= link_to "edit", edit_activity_path(@activity) %>

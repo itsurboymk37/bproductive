@@ -1,0 +1,7 @@
+<h1>Articles Tagged with <%= @tag.name %></h1>
+
+<ul>
+  <% @tag.activities.each do |activity| %>
+    <li><%= link_to activity.title, activity_path(activity) %></li>
+  <% end %>
+</ul>
