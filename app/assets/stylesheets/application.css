@@ -18,3 +18,16 @@
     text-align: center;
     color: blue;
  }
+
+ .new_activity {
+     margin-bottom: 120px;
+ }
+
+ .activity {
+     padding: 100px;
+     margin: 20px;
+     display: inline;
+     justify-content: center;
+     text-align: center; 
+     background-color: yellow;
+ }
