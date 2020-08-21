@@ -19,12 +19,8 @@
     color: blue;
  }
 
- .tag {
-     padding-bottom: 120px;
- }
-
- .tag_list {
-     padding-bottom: 20px;
+ .tag_list, .tag {
+    padding: 10px;
  }
 
  .new_activity, .new_post {
@@ -42,8 +38,7 @@
 
  .activity {
     padding: 100px;
-    margin: 20px;
-    display: inline;
+    display: inline-block;
     justify-content: center;
     text-align: center; 
     background-color: rgb(0, 255, 255);

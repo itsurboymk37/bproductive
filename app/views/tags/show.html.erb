@@ -1,5 +1,32 @@
 <h1>Browse All Tags</h1>
+<div class='nav_bar'>
+  <p class='page_nav'><%= link_to "See All Activities", activities_path %></p>
+  <p class='page_nav'><%= link_to "To the Posts Page!", posts_path %></p>
+  <p class='new_activity'><%= link_to "Create a New Activity", new_activity_path %></p>
+</div>
 
+<ul>
+  <% @tags.each do |tag| %>
+    <% if tag==@tag %>
+      <li class='tag'>
+        <%= link_to @tag.name, tags_path %>
+        <% @tag.activities.each do |activity| %>
+          <li class='activity'>
+            <%= link_to activity.title, activity_path(activity) %>
+          </li>
+        <% end %>
+      </li>
+    <% else %>
+      <li class='tag_list'>
+        <%= link_to tag.name, tag_path(tag) %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+
+
+<!--
 <ul>
   <li class='tag'>
     <%= link_to @tag.name, tags_path %>
@@ -13,14 +40,10 @@
   <% end %>
 </ul>
 
-
-
-<!-- Old Tag Display Method
-<h1>Articles Tagged with <%= @tag.name %></h1>
-
 <ul>
-  <% @tag.activities.each do |activity| %>
-    <li><%= link_to activity.title, activity_path(activity) %></li>
+  <% @tags.each do |tag| %>
+    <li class='tag_list'>
+      <%= link_to tag.name, tag_path(tag) %>
+    </li>
   <% end %>
-</ul>
--->
+</ul> -->

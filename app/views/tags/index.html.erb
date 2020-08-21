@@ -1,4 +1,9 @@
 <h1>Browse All Tags</h1>
+<div class='nav_bar'>
+  <p class='page_nav'><%= link_to "See All Activities", activities_path %></p>
+  <p class='page_nav'><%= link_to "To the Posts Page!", posts_path %></p>
+  <p class='new_activity'><%= link_to "Create a New Activity", new_activity_path %></p>
+</div>
 
 <ul>
   <% @tags.each do |tag| %>
@@ -7,3 +12,6 @@
     </li>
   <% end %>
 </ul>
+
+<!-- Need to: make this the functional homepage
+Need to improve show page so that other tags stay in the same place -->
