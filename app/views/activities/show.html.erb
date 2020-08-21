@@ -1,11 +1,13 @@
 <h1><%= @activity.title %></h1>
-<p>
+<p class='post_tags'>
   Tags:
   <% @activity.tags.each do |tag| %>
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
 </p>
-<p><%= @activity.body %></p>
-<%= link_to "<< Back to Activity List", activities_path %>
-<%= link_to "edit", edit_activity_path(@activity) %>
-<%= link_to "delete", activity_path(@activity), method: :delete %>
+<p class='body'><%= @activity.body %></p>
+<div class='nav_bar'>
+  <p class='page_nav'><%= link_to "See All Content", tags_path %></p>
+  <p class='page_nav'><%= link_to "edit", edit_activity_path(@activity) %></p>
+  <p class='page_nav'><%= link_to "delete", activity_path(@activity), method: :delete %></p>
+</div>
