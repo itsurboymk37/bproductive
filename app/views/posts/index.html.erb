@@ -1,6 +1,8 @@
 <h1>All Posts</h1>
-<p class='page_nav'><%= link_to "Back to the Home Page!", activities_path %></p>
-<p class='new_post'><%= link_to "Create a New Post", new_post_path %></p>
+<div class='nav_bar'>
+  <p class='page_nav'><%= link_to "Back to the Home Page!", activities_path %></p>
+  <p class='page_nav'><%= link_to "Create a New Post", new_post_path %></p>
+</div>
 <ul>
   <% @posts.each do |post| %>
     <li class='post'>

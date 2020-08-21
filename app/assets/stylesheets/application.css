@@ -14,22 +14,19 @@
  *= require_self
  */
 
- h1, .new_activity, .form, .new_post, .page_nav{
+ h1, .form, .page_nav{
     text-align: center;
     color: blue;
  }
 
- .tag_list, .tag {
+.tag {
     padding: 10px;
  }
 
- .new_activity, .new_post {
-    margin-bottom: 120px;
- }
-
- .page_nav, .new_activity, .new_post {
+ .page_nav {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 120px;
  }
 
  .nav_bar, .body, .post_tags {

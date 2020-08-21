@@ -2,7 +2,7 @@
 <div class='nav_bar'>
   <p class='page_nav'><%= link_to "See All Activities", activities_path %></p>
   <p class='page_nav'><%= link_to "To the Posts Page!", posts_path %></p>
-  <p class='new_activity'><%= link_to "Create a New Activity", new_activity_path %></p>
+  <p class='page_nav'><%= link_to "Create a New Activity", new_activity_path %></p>
 </div>
 
 <ul>
@@ -17,7 +17,7 @@
         <% end %>
       </li>
     <% else %>
-      <li class='tag_list'>
+      <li class='tag'>
         <%= link_to tag.name, tag_path(tag) %>
       </li>
     <% end %>
