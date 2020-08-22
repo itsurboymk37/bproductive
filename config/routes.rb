@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :activities
   resources :posts
   resources :tags
+  resources :authors
 end
