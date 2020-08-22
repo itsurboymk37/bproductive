@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+    before_action :require_login, except: [:index, :show]
+
     include PostsHelper
     def index
         @posts = Post.all

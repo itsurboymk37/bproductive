@@ -1,5 +1,7 @@
 class ActivitiesController < ApplicationController
     include ActivitiesHelper
+    before_action :require_login, except: [:index, :show]
+    
     def index
         @activities = Activity.all
     end
