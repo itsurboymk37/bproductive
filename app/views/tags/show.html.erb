@@ -3,6 +3,7 @@
   <p class='page_nav'><%= link_to "See All Activities", activities_path %></p>
   <p class='page_nav'><%= link_to "To the Posts Page!", posts_path %></p>
   <p class='page_nav'><%= link_to "Create a New Activity", new_activity_path %></p>
+  <p class='page_nav'><%= link_to "Users", authors_path%></p>
 </div>
 
 <ul>
@@ -23,6 +24,8 @@
     <% end %>
   <% end %>
 </ul>
+
+<h6><%= link_to "Users", authors_path%></h6>
 
 
 
